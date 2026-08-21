@@ -11,8 +11,14 @@ revisions) across 2026-08-21/22. Its claims of absence are bounded to
 documented search scopes.
 ## The problem this names
 
-In every mainstream review system, one reviewer's objection to one part
-freezes the whole: GitHub's request-changes blocks the entire pull
+In mainstream CODE review, one reviewer's objection to one part freezes
+the whole; document tooling does have section-level approval (page-
+section approval macros in wiki tooling; clause-conditional approval
+routing in contract-management suites; a published patent with
+per-section approval states on a workflow graph, US20180300304A1) —
+acknowledged, and distinguished below: none of those systems propagates
+a rejection along a semantic dependency map, and none makes the map
+contestable. In code review the freeze is near-universal: GitHub's request-changes blocks the entire pull
 request; Gerrit's −2 blocks the change; an IESG DISCUSS names specific
 issues yet still holds the entire document — the objection is scoped, the
 BLOCKING is not. In high-throughput multi-agent work this converts every
@@ -24,7 +30,8 @@ ten sections of unrelated, finished work.
 Scoped rejection with a landing remainder is OLD outside software:
 line-item veto lets named items fall while the remainder becomes law;
 parliamentary division of the question votes severable parts separately;
-and in code review, stacked-change systems (Gerrit relation chains,
+in document tooling, per-section approval exists without dependency
+semantics (above); and in code review, stacked-change systems (Gerrit relation chains,
 Depends-On footers) land unrelated stack members while a −2 blocks
 exactly the declared dependents — an author-declared, discussion-
 contestable dependency graph at CHANGE granularity. All acknowledged.
